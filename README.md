@@ -57,3 +57,25 @@ We also offer a Jupyter Notebook for setting up and testing a new scraper direct
 
 ## Test Scripts for Scrapers
 - `test_scraper.py` Use this script to test individual scrapers, including any newly added ones.
+
+## Adding new Scrapers to the main software
+- **Requirements for Adding New Scrapers:**
+- Register the new scraper in the `searchengine` table.
+
+  | Name                  | Module                           | Result Type                | Country                 |
+  |-----------------------|----------------------------------|----------------------------|-------------------------|
+  | Search Engine Name    | Python file with scraper (e.g., `your_scraper.py`) | Foreign key to `resulttype` table (e.g., 1 = organic results) | Foreign key to `country` table (e.g., 1 = Germany) |
+
+## List of available Scrapers:
+- Microsoft Bing (Country versions: Germany, France, Italy, Poland, Sweden, USA) - Developed by [Sebastian Sünkler](https://github.com/sebsuenkler/)
+- Google (Country versions: Germany, France, Italy, Poland, Sweden, USA) - Developed by [Sebastian Sünkler](https://github.com/sebsuenkler/)
+- Google Video (Country versions: Germany, France, Italy, Poland, Sweden, USA) - Developed by [Sebastian Sünkler](https://github.com/sebsuenkler/)
+- DuckDuckGo (Country versions: Germany, France, Italy, Poland, Sweden, USA) - Developed by [Sebastian Sünkler](https://github.com/sebsuenkler/)
+- Ecosia (Country versions: Germany, USA) - Developed by [Sebastian Sünkler](https://github.com/sebsuenkler/)
+- Katalogplus (Country versions: Germany) - Developed by [Sebastian Sünkler](https://github.com/sebsuenkler/)
+- Brave (Country versions: Germany) - Developed by [Sophia Bosnak](https://github.com/kyuja)
+- Dogpile (Country versions: Germany) - Developed by [Sophia Bosnak](https://github.com/kyuja)
+- Econbiz (Country versions: Germany) - Developed by [Sophia Bosnak](https://github.com/kyuja)
+- Fireball (Country versions: Germany) - Developed by [Sophia Bosnak](https://github.com/kyuja)
+- Lycos (Country versions: Germany) - Developed by [Sophia Bosnak](https://github.com/kyuja)
+- Mojeek (Country versions: Germany) - Developed by [Sophia Bosnak](https://github.com/kyuja) 
